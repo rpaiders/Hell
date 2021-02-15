@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clicker.io</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!--Var rakstīt codu style.css sadaļā-->
+    <script src="/script.js" defer></script>
+    <!--Var rakstīt codu script.js sadaļā-->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  </head>
+
+  <body>
+    <!--Pirmais character-->
+    <div class="character" id="char" onclick="sist()"></div>
+    <h2>Health: <span id="hp"></span></h2>
+    <p>Level: <span id="lvl"></span></p>
+    <p>Coins: <span id="nauda"></span></p>
+    <button onclick="maksa()" style="font-size:20px">
+      Add speed (<span id="c" style="color: red;"></span> Coins)
+    </button>
+    <button onclick="autoClicker()" style="font-size:20px">
+      20 Auto Clicker <span id="sbac"></span>/sec<input type="checkbox" />
+    </button>
+    <div class="statistic">
+      <h1 style="text-align:center;  text-decoration: underline;">
+        Statistics
+      </h1>
+      <div style="font-family: Lucida Console, Courier, monospace;">
+        Clicks: <span id="total_clicks"></span><br />
+        Total coins: <span id="total_nauda"></span><br />
+      </div>
+    </div>
+    <!--Otrais character-->
+    <div class="character1" id="newCharacter" onclick="sist()"></div>
+    <button onclick="newCharacter()" style="font-size:20px">
+      character(100 Coins)
+    </button>
+  </body>
+</html>
